@@ -1,0 +1,32 @@
+version: 2.1
+jobs:
+  build:
+
+    docker:
+      - image: circleci/python:3.10
+
+    steps:
+
+      - restore_cache:
+          keys:
+            - source-v1-{{ .Branch }}-{{ .Revision }}
+            - source-v1-{{ .Branch }}-
+            - source-v1-
+      - checkout
+      - save_cache:
+          key: source-v1-{{ .Branch }}-{{ .Revision }}
+          paths:
+            - ".git"
+
+      - run: pip3 install black
+      - run: pip3 install pylint
+      - run: sudo apt-get update
+      - run: sudo apt-get -y install shellcheck devscripts
+
+      - run: make
+
+workflows:
+  version: 2
+  build:
+    jobs:
+      - build
