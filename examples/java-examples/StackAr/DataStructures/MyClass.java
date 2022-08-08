@@ -2,43 +2,24 @@ package DataStructures;
 
 public class MyClass {
 
-      public int hereFun(int x) {
-          switch (x) {
-              case 1 : {
-                  return 2;
-              }
-              case 2 : {
-                  return 3;
-              }
-              case 3 : {
-                  return 4;
-              }
-              case 4 : {
-                  return 5;
-              }
-              case 5 : {
-                  return 6;
-              }
-              case 6 : {
-                  return 7;
-              }
-              case 7 : {
-                  return 8;
-              }
-              case 8 : {
-                  return 9;
-              }
-              case 9 : {
-                  return 10;
-              }
-          }
-          return x+1;
+      public static int z;
+
+      public static int hereFun(int x, int y) {
+           if (x==1 && y==2) { z = 3; }
+           if (x==2 && y==3) { z = 5; }
+           if (x==3 && y==4) { z = 7; }
+           if (x==4 && y==5) { z = 9; }
+           if (x==5 && y==6) { z = 11; }
+           if (x==6 && y==7) { z = 13; }
+           return z;
       }
 
       public static void main(String[] args) {
-            MyClass m = new MyClass();
-            for (int i = 1; i < 10 ; i++) {
-                m.hereFun(i);
-            }
+            hereFun(1, 2);
+            hereFun(2, 3);
+            hereFun(3, 4);
+            hereFun(4, 5);
+            hereFun(5, 6);
+            hereFun(6, 7);
         }
 }
