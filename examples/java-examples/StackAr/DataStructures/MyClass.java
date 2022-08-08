@@ -2,10 +2,8 @@ package DataStructures;
 
 public class MyClass {
 
-      public int z;
       public int hereFun(int x, int y) {
-        z = x + y;
-        return z;
+          return 2 * x + 1;
       }
 
       public static void main(String[] args) {

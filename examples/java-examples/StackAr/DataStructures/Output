@@ -6,7 +6,6 @@ DataStructures.MyClass:::OBJECT
 this has only one value
 ===========================================================================
 DataStructures.MyClass.MyClass():::EXIT
-this.z == 0
 ===========================================================================
 DataStructures.MyClass.hereFun(int, int):::ENTER
 ===========================================================================
