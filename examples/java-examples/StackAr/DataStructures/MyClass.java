@@ -32,7 +32,7 @@ public class MyClass {
                   return 10;
               }
           }
-          return 0;
+          return x+1;
       }
 
       public static void main(String[] args) {
