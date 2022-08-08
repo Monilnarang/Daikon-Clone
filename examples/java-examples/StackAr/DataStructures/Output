@@ -7,9 +7,45 @@ this has only one value
 ===========================================================================
 DataStructures.MyClass.MyClass():::EXIT
 ===========================================================================
-DataStructures.MyClass.hereFun(int, int):::ENTER
+DataStructures.MyClass.hereFun(int):::ENTER
 ===========================================================================
-DataStructures.MyClass.hereFun(int, int):::EXIT
+DataStructures.MyClass.hereFun(int):::EXIT11
+return == 3
+orig(x) == 2
+===========================================================================
+DataStructures.MyClass.hereFun(int):::EXIT14
+return == 4
+orig(x) == 3
+===========================================================================
+DataStructures.MyClass.hereFun(int):::EXIT17
+return == 5
+orig(x) == 4
+===========================================================================
+DataStructures.MyClass.hereFun(int):::EXIT20
+return == 6
+orig(x) == 5
+===========================================================================
+DataStructures.MyClass.hereFun(int):::EXIT23
+return == 7
+orig(x) == 6
+===========================================================================
+DataStructures.MyClass.hereFun(int):::EXIT26
+return == 8
+orig(x) == 7
+===========================================================================
+DataStructures.MyClass.hereFun(int):::EXIT29
+return == 9
+orig(x) == 8
+===========================================================================
+DataStructures.MyClass.hereFun(int):::EXIT32
+return == 10
+orig(x) == 9
+===========================================================================
+DataStructures.MyClass.hereFun(int):::EXIT8
+return == 2
+orig(x) == 1
+===========================================================================
+DataStructures.MyClass.hereFun(int):::EXIT
 ===========================================================================
 DataStructures.MyClass.main(java.lang.String[]):::ENTER
 args has only one value
