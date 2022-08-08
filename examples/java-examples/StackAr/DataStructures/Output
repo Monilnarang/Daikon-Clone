@@ -1,0 +1,25 @@
+Daikon version 5.8.12, released July 14, 2022; http://plse.cs.washington.edu/daikon.
+Reading declaration files Processing trace data; reading 1 dtrace file:
+
+===========================================================================
+DataStructures.MyClass:::OBJECT
+this has only one value
+===========================================================================
+DataStructures.MyClass.MyClass():::EXIT
+this.z == 0
+===========================================================================
+DataStructures.MyClass.hereFun(int, int):::ENTER
+===========================================================================
+DataStructures.MyClass.hereFun(int, int):::EXIT
+===========================================================================
+DataStructures.MyClass.main(java.lang.String[]):::ENTER
+args has only one value
+args.getClass().getName() == java.lang.String[].class
+args[] == []
+args[].toString == []
+===========================================================================
+DataStructures.MyClass.main(java.lang.String[]):::EXIT
+args[] == orig(args[])
+args[] == []
+args[].toString == []
+Exiting Daikon.
