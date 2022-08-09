@@ -2,29 +2,24 @@ package DataStructures;
 
 public class MyClass {
 
-      public static void main(String[] args) {
-            hereFun(100, 202);
-            hereFun(20, 10);
-            hereFun(33, 44);
-            hereFun(4101, 5202);
-            hereFun(55, 6);
-            hereFun(600, 70);
-            hereFun(501, 70);
-            hereFun(2222, 3333);
-        }
+         public static void main(String[] args) {
+             ourOwn(5, 2);//, 7, 3, 1);
+             ourOwn(5, 1);//, 6, 4, 1);
+             ourOwn(5, 6);//, 11, -1, 5);
+             ourOwn(5, 13);//, 18, -8, 5);
+             ourOwn(3, 3);//, 6, 0, 3);
+           }
 
-      public static int hereFun(int x, int y) {
-           int z = 0;
-           if (true) return x + y;
-           if ((x==100) && (y==202)) { z = 302; }
-           if ((x==20) && (y==10)) { z = 30; }
-           if ((x==33) && (y==44)) { z = 77; }
-           if ((x==4101) && (y==5202)) { z = 9303; }
-           if ((x==55) && (y==6)) { z = 61; }
-           if ((x==600) && (y==70)) { z = 670; }
-           if ((x==501) && (y==70)) { z = 571; }
-           if ((x==2222) && (y==3333)) { z = 5555; }
-           System.out.println(x + " " + y + " " + z);
-           return z;
-      }
+           public static int ourOwn(int size, int pageSize) {//, int numOfPages, int firstPageSize, int lastPageSize) {
+               int r = 0;//size - pageSize;
+               if ((size == 5) && (pageSize == 2)) { r = 7; }
+               if ((size == 5) && (pageSize == 1)) { r = 6; }
+               if ((size == 5) && (pageSize == 6)) { r = 11; }
+               if ((size == 5) && (pageSize == 13)) { r = 18; }
+               if ((size == 3) && (pageSize == 3)) { r = 6; }
+               if ((size == 10) && (pageSize == 3)) { r = 13; }
+               if ((size == 100) && (pageSize == 3)) { r = 103; }
+               System.out.println(size + " " + pageSize + " " + r);
+               return r;
+             }
 }
