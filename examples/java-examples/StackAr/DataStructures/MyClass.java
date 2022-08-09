@@ -3,23 +3,28 @@ package DataStructures;
 public class MyClass {
 
       public static int z;
-
+      public static int x;
+      public static int y;
       public static int hereFun(int x, int y) {
-           if (x==1 && y==2) { z = 3; }
-           if (x==2 && y==3) { z = 5; }
-           if (x==3 && y==4) { z = 7; }
-           if (x==4 && y==5) { z = 9; }
-           if (x==5 && y==6) { z = 11; }
-           if (x==6 && y==7) { z = 13; }
+           MyClass.x = x;
+           MyClass.y = y;
+           if (true) return x + y;
+           if (x==100 && y==202) { z = 302; }
+           if (x==20 && y==10) { z = 30; }
+           if (x==33 && y==44) { z = 77; }
+           if (x==4101 && y==5202) { z = 9303; }
+           if (x==55 && y==6) { z = 61; }
+           if (x==600 && y==70) { z = 670; }
            return z;
       }
 
+
       public static void main(String[] args) {
-            hereFun(1, 2);
-            hereFun(2, 3);
-            hereFun(3, 4);
-            hereFun(4, 5);
-            hereFun(5, 6);
-            hereFun(6, 7);
+            hereFun(100, 202);
+            hereFun(20, 10);
+            hereFun(33, 44);
+            hereFun(4101, 5202);
+            hereFun(55, 6);
+            hereFun(600, 70);
         }
 }
